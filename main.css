@@ -1,0 +1,94 @@
+*{
+margin: 0;
+padding: 0;
+border: 0;
+box-sizing: border-box;
+}
+
+body{
+font-family: Garamond, arial;
+background-color: #e3ebef;
+font-size: 100%;
+width:80vw;
+margin: 0 auto;
+text-align: center;
+}
+
+header{
+	width: 100%;
+	padding: 30px;
+	font-size: 150%;
+	background-color: #897aef;
+	color:#d3d0e8;
+}
+
+ul {
+	width: 100%;
+	font-size: 120%;
+	background-color: #b5abfc;
+}
+
+ul li{
+	margin: 0 auto;
+	width: 20%;
+	padding: 20px;
+	list-style-type: none;
+	display: inline-block;
+	cursor:pointer;
+}
+
+ul li:hover{
+	background-color: #7663f9;
+	color: #d3d0e8;
+}
+.container{
+	width: 100%;
+	margin: 0 auto;
+}
+div{
+	width: 24.5%;
+	height: 100%;
+	display: inline-block;
+	text-align: justify;
+	vertical-align: top;
+	margin: 0 auto;
+}
+#tab1{
+	background-color: #8e2693;
+	padding: 20px;
+}
+#tab2{
+	background-color: #2d5ca3;
+	padding: 20px;
+	}
+#tab3{
+	background-color: #39ba51;
+	padding: 20px;
+	}
+#tab4{
+	background-color: #ede634;
+	padding: 20px;
+	}
+@media (max-width:850px){
+body{
+font-size: 85%;
+}
+#tab1, #tab2, #tab3, #tab4 {
+	padding:10px;
+}
+}
+
+
+@media (max-width:768px){
+body{
+font-size: 70%;
+}
+div{
+	width: 24%;
+}
+
+@media (max-width:600px){
+ul li, div{
+	display: block;
+	width: 100%;
+}
