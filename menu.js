@@ -4,7 +4,7 @@ $(document).ready(function(){
 
 			var tabId = $(this).attr('data-tabId');
 
-		$('#'+tabId).toggle();
+		$('#'+tabId).toggle(500);
 			});
 
 });

@@ -69,8 +69,16 @@ div{
 	background-color: #ede634;
 	padding: 20px;
 	}
+
+@media (max-width:1224px){
+body{
+width:90vw;
+font-size: 85%;
+}
+
 @media (max-width:850px){
 body{
+width:100vw;
 font-size: 85%;
 }
 #tab1, #tab2, #tab3, #tab4 {
@@ -91,4 +99,10 @@ div{
 ul li, div{
 	display: block;
 	width: 100%;
+}
+ul li{
+	padding:10px;
+}
+header{
+	padding: 20px;
 }
