@@ -30,10 +30,10 @@ ul {
 
 ul li{
 	margin: 0 auto;
-	width: 20%;
-	padding: 20px;
-	list-style-type: none;
 	display: inline-block;
+	width: 22%;
+	padding: 20px 10px;
+	list-style-type: none;
 	cursor:pointer;
 }
 
@@ -41,68 +41,70 @@ ul li:hover{
 	background-color: #7663f9;
 	color: #d3d0e8;
 }
-.container{
-	width: 100%;
-	margin: 0 auto;
-}
-div{
-	width: 24.5%;
-	height: 100%;
-	display: inline-block;
-	text-align: justify;
-	vertical-align: top;
-	margin: 0 auto;
-}
-#tab1{
-	background-color: #8e2693;
-	padding: 20px;
-}
-#tab2{
-	background-color: #2d5ca3;
-	padding: 20px;
-	}
-#tab3{
-	background-color: #39ba51;
-	padding: 20px;
-	}
-#tab4{
-	background-color: #ede634;
-	padding: 20px;
+ section{
+ 	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: stretch;
+	justify-content: space-between;
 	}
 
+section div {
+	flex: 1 1 200px;
+	text-align: justify;
+	vertical-align: top;
+	padding: 10px;
+}
+#tab1{background-color: #8e2693;}
+#tab2{background-color: #2d5ca3;}
+#tab3{background-color: #39ba51;}
+#tab4{background-color: #ede634;}
+
 @media (max-width:1224px){
+
 body{
 width:90vw;
-font-size: 85%;
+	}
 }
 
 @media (max-width:850px){
+
 body{
 width:100vw;
-font-size: 85%;
+font-size: 95%;
 }
-#tab1, #tab2, #tab3, #tab4 {
+section div  {
 	padding:10px;
 }
 }
 
 
 @media (max-width:768px){
+
 body{
-font-size: 70%;
-}
-div{
-	width: 24%;
+font-size: 90%;
+	}
 }
 
 @media (max-width:600px){
-ul li, div{
-	display: block;
+
+section{
+	flex-flow: column wrap;
+}
+section div{
 	width: 100%;
+	flex-basis: initial;
 }
-ul li{
-	padding:10px;
-}
+ ul li{
+ 	width: 100%;
+ 	display: block;
+	padding:8px;
+	background-color: #b2ebff;
+	}
 header{
 	padding: 20px;
+}
+section div {
+	padding: 5px;
+}
 }
